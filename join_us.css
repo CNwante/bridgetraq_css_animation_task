@@ -1,0 +1,48 @@
+.join_us_banner {
+  padding: 4em 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.join_content {
+  background: linear-gradient(15deg, #1a1c3a, #0a0b16, #1a1c3a, #1a1c3a);
+  border-radius: 20px;
+  padding: 2em;
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.join_tagline {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid #7b6ead;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #7b6ead;
+  margin-bottom: 1em;
+}
+
+.join_title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  padding: 0em 4em;
+  color: #fff;
+  line-height: 1.3;
+}
+
+.btn.join_btn {
+  background: linear-gradient(90deg, #2c2a4d, #7b6ead);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 50px;
+  transition: background 0.3s;
+}
+
+.btn.join_btn:hover {
+  background: linear-gradient(90deg, #3b385e, #9b8ecd);
+}

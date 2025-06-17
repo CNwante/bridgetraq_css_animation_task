@@ -1,0 +1,116 @@
+/* =================================
+  Slide Right
+==================================== */
+@keyframes slide_right {
+  from {
+    transform: translateX(-150px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide_right,
+.slide_right_hero_btn {
+  animation: slide_right 0.85s ease-out both;
+}
+
+.slide_right {
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+/* ===== Staggered Slide Right ===== */
+.slide_right:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide_right:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.slide_right:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+/* =================================
+  Slide Top
+==================================== */
+@keyframes slide_top {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.slide_top {
+  animation: slide_top 1s ease-out 0.05s both;
+}
+
+/* ====================================
+  Slide Forward from Center (Scale)
+==================================== */
+@keyframes slide_fwd_center {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.slide_fwd_center {
+  animation: slide_fwd_center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+/* ==== Staggered Scale-In ===== */
+.slide_fwd_center:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide_fwd_center:nth-child(2) {
+  animation-delay: 0.25s;
+}
+.slide_fwd_center:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+/* =================================
+  Slide to Bottom
+==================================== */
+@keyframes slide_bottom {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+}
+
+.slide_bottom {
+  animation: slide_bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40%;
+}
+
+/* ==== Staggered Slide Bottom ===== */
+.slide_bottom:nth-child(1) {
+  animation-delay: 0s;
+}
+.slide_bottom:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.slide_bottom:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.slide_bottom:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.slide_bottom:nth-child(5) {
+  animation-delay: 0.8s;
+}

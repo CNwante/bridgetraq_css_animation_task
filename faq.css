@@ -1,0 +1,77 @@
+.faq_container {
+  padding: 4em 0;
+  color: #fff;
+  background: #0a0b16;
+  text-align: center;
+}
+
+.faq_container .l2_header {
+  font-size: 36px;
+  margin-bottom: 0.5em;
+  color: #fff;
+}
+
+.faq_container .sub_title {
+  font-size: 16px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 2em;
+}
+
+.faq_list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq_item {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 1em;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.faq_item header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  cursor: pointer;
+}
+
+.faq_item .l3_header {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.faq_item .description {
+  display: none;
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 0.5em;
+}
+
+.faq_item.active .description {
+  display: block;
+}
+
+.faq_toggle {
+  font-size: 18px;
+  color: #7b6ead;
+  transition: transform 0.3s ease;
+}
+
+.faq_item.active .faq_toggle {
+  transform: rotate(180deg);
+}
+
+/* JavaScript would be needed for toggle functionality, e.g.: */
+

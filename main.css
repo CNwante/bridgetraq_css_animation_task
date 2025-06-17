@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0b16;
+}
+
+main {
+  max-width: 66%;
+  margin: 0 auto;
+}
+
+/* Header */
+.l2_header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: aliceblue;
+}
+
+.sub_title {
+  font-size: 1.125rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.btn {
+  color: aliceblue;
+  border: none;
+  padding: 0.75em 1.5em;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  background: #25234b;
+  background: linear-gradient(#2c2a4d, #7b6ead);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(360deg, #2c2a4d, #7b6ead);
+}
